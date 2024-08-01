@@ -107,13 +107,15 @@
   </style>
   
   <div class="text-center bg-slate-800">
+    <h1 class="text-4xl font-bold mb-2">DICOM Viewer</h1>
     <input
       class="file-input file-input-bordered file-input-success w-full max-w-xs file-input-sm my-2"
       type="file"
       accept=".dcm"
       on:change={handleFileChange}
     />
-    <div>
+    <div >
+    
       <div
         class="dicom-viewer mx-auto"
         bind:this={dicomImageElement}
